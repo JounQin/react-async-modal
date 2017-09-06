@@ -1,0 +1,36 @@
+{
+  "name": "react-async-modal",
+  "version": "0.0.1",
+  "description": "Flexible modal component for React with ability of asynchronous lazy loading",
+  "main": "index.js",
+  "repository": "https://github.com/JounQin/react-async-modal.git",
+  "author": "JounQin <admin@1stg.me>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --config build/webpack.config.babel.js --color --hot --progress",
+    "build": "rimraf docs && cross-env NODE_ENV=production webpack --config build/webpack.config.babel.js --color --progress -p && git add docs",
+    "lint": "eslint . --max-warnings=10",
+    "lint:fix": "yarn lint -- --fix"
+  },
+  "peerDependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "cross-env": "^5.0.5",
+    "eslint": "^4.6.1",
+    "eslint-config-1stg": "^0.0.4",
+    "html-webpack-plugin": "^2.30.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-hot-loader": "next",
+    "rimraf": "^2.6.1",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
