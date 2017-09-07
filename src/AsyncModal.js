@@ -4,6 +4,6 @@ import ModalItem from '../lib/ModalItem'
 
 export default class extends React.PureComponent {
   render() {
-    return <ModalItem>ModalItem</ModalItem>
+    return <ModalItem header="I'm title" footer={true}>Async Modal</ModalItem>
   }
 }

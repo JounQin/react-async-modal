@@ -34,6 +34,14 @@ export default {
         loader: 'babel-loader',
         exclude: /node_modules/,
         options: {cacheDirectory: true}
+      },
+      {
+        test: /\.css$/,
+        loaders: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   },
@@ -47,10 +55,10 @@ export default {
     }),
     ...(isProd
       ? [
-          new webpack.optimize.ModuleConcatenationPlugin(),
-          new webpack.optimize.CommonsChunkPlugin('vendors'),
-          new webpack.optimize.CommonsChunkPlugin('manifest')
-        ]
+        new webpack.optimize.ModuleConcatenationPlugin(),
+        new webpack.optimize.CommonsChunkPlugin('vendors'),
+        new webpack.optimize.CommonsChunkPlugin('manifest')
+      ]
       : [new webpack.NamedModulesPlugin()])
   ]
 }
