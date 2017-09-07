@@ -55,10 +55,10 @@ export default {
     }),
     ...(isProd
       ? [
-        new webpack.optimize.ModuleConcatenationPlugin(),
-        new webpack.optimize.CommonsChunkPlugin('vendors'),
-        new webpack.optimize.CommonsChunkPlugin('manifest')
-      ]
+          new webpack.optimize.ModuleConcatenationPlugin(),
+          new webpack.optimize.CommonsChunkPlugin('vendors'),
+          new webpack.optimize.CommonsChunkPlugin('manifest')
+        ]
       : [new webpack.NamedModulesPlugin()])
   ]
 }
