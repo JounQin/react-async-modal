@@ -30,7 +30,7 @@
     "node-sass": "^4.5.3",
     "normalize.css": "^7.0.0",
     "react": "^16.0.0",
-    "react-dom": "^15.6.1",
+    "react-dom": "^16.0.0",
     "react-hot-loader": "next",
     "rimraf": "^2.6.1",
     "sass-loader": "^6.0.6",
