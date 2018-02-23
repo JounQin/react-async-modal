@@ -25,7 +25,7 @@
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "eslint": "^4.6.1",
-    "eslint-config-1stg": "^0.0.5",
+    "eslint-config-1stg": "^2.0.0",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.5.3",
     "normalize.css": "^8.0.0",
