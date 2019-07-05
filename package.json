@@ -33,7 +33,7 @@
     "react-dom": "^16.0.0",
     "react-hot-loader": "next",
     "rimraf": "^2.6.1",
-    "sass-loader": "^6.0.6",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.20.1",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
